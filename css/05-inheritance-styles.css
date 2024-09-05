@@ -1,0 +1,22 @@
+body {
+    margin-left: 50px;
+}
+
+.cascading-parent {
+    font-weight: bold; 
+    color: #000;
+}
+
+.paragraph {
+    font-size: 16px;
+    font-weight: normal;
+    width: 50%;
+}
+
+.cascading-child {
+    background-color: #000;
+    width: fit-content;
+    height: 20px;
+    padding: 5px;
+    color: #FFF !important;
+}
