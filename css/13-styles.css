@@ -1,0 +1,154 @@
+:root {
+    --white: #ffffff;
+    --light-grey: #c5c5c5;
+    --dark-grey: #555555;
+    --black: #000000;
+}
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation {
+    width: 100%;
+    background: var(--white);
+    color: var(--black);
+    font-size: 24px;
+    font-weight: bold;
+    padding: 40px;
+    border: 5px solid transparent;
+}
+
+
+/** determines the location of the menu */
+.menu {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+}
+
+/** determines the look of the menu trigger */
+.menu-trigger {
+    background-color: var(--white);
+    height: 34px;
+    width: 68px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    z-index: 5000, !important;
+
+}
+
+/** determines what it looks like when hovering over the menu */
+.menu-trigger:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/** determines where the dropdown starts*/
+.menu-trigger:hover .dropdown {
+    top: 0px;
+}
+
+/** determines what the dropdown looks like*/
+.dropdown {
+    position: fixed;
+    top: -400px;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: var(--black);
+    color: var(--white);
+    transition: all 0.4s ease;
+    padding: 40px;
+
+}
+
+.content {
+    display: flex;
+    background-color: var(--white);
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
+    height: 50%;
+}
+
+.content-block {  
+    display: inline-block;
+    width: 32%;
+    height: 300px;
+
+    margin: 10px;
+
+    border: 0px solid transparent;
+    border-radius: 5%;
+
+    text-align: center;
+
+    transition: all 0.4s ease;
+}
+
+
+.content-block h1 {
+    color: var(--white);
+    margin: 150px;
+}
+
+
+.content-block:hover {
+    border: 5px solid transparent;
+    -webkit-box-shadow: 0px, 0px, 10px, 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px, 0px, 10px, 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.rome {
+    background: url(https://as1.ftcdn.net/v2/jpg/00/92/58/28/1000_F_92582804_9G6V5hKhcnCJ60w2I87fqOTJmgQEySTy.jpg);
+    background-position: center center;
+    background-size: 110% 110%;
+    background-repeat: no-repeat;
+}
+
+.bruxelles {
+    background: url(https://www.mrsmithworldphotography.com/photos/Atomium-Brussels-1.jpg);
+    background-position: center center;
+    background-size: 110% 110%;
+    background-repeat: no-repeat;
+}
+
+.newyork {
+    background: url(https://cameo-splashbacks.co.uk/wp-content/uploads/2019/03/BROOKLYN-BRIDGE-AT-NIGHT-1-2.jpg);
+    background-position: center center;
+    background-size: 110% 110%;
+    background-repeat: no-repeat;
+}
+   
+.footer {
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    width: 100%;
+
+    background: var(--light-grey);
+    color: var(--black);
+    padding: 20px;
+
+    justify-content:space-between;
+    align-items: top;
+}
+
+.footer-block {
+    color: var(--white);
+    display: inline-block;
+
+    width: 20%;
+    padding: 40px;
+    font-size: 20px;
+
+}
